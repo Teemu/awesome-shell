@@ -79,3 +79,36 @@ alias changed='git diff HEAD'
 alias acommit='git add -A :/ && git commit -a'
 alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
 ````
+
+## Vim
+
+![](https://i.imgur.com/0pPggF7.png)
+
+Install vim-plug:
+
+````
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+````
+
+````
+syntax on
+set ts=4 sw=4
+set number
+set background=dark
+set updatetime=100
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'micha/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Initialize plugin system
+call plug#end()
+
+let g:airline_powerline_fonts = 1"
+let g:solarized_termcolors=256
+colorscheme solarized
+````
+
+And run `:PlugInstall`
