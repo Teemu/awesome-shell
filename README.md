@@ -30,7 +30,7 @@ Tip: If you are using iTerm2, modify colors so that autocomplete is visible.
 
 ### Faster pasting
 
-````
+````bash
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
 pasteinit() {
@@ -47,7 +47,7 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 ## Arrow support
 
-````
+````bash
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
@@ -65,14 +65,14 @@ function chpwd() {
 
 ## Better ls
 
-````
+````bash
 brew install exa
 alias ls="exa --color=auto --icons"
 ````
 
 ## Aliases
 
-````
+````bash
 alias gitbranch="git for-each-ref --color=always --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | tail -15"
 alias gpu='git push -u origin $(git symbolic-ref --short HEAD)'
 alias changed='git diff HEAD'
@@ -86,7 +86,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resourc
 
 Install vim-plug:
 
-````
+````bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ````
