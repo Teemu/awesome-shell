@@ -93,11 +93,14 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ````
 syntax on
+set backspace=indent,eol,start
+
 set ts=4 sw=4
 set number
 set background=dark
 set updatetime=100
 call plug#begin('~/.vim/plugged')
+Plug 'sickill/vim-monokai'
 Plug 'airblade/vim-gitgutter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'micha/vim-colors-solarized'
@@ -107,8 +110,9 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let g:airline_powerline_fonts = 1"
-let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_termcolors=256
+" colorscheme solarized
+colorscheme monokai
 ````
 
 And run `:PlugInstall`
