@@ -21,9 +21,13 @@ export UPDATE_ZSH_DAYS=365
 ````bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+brew install autojump
 
 # Add them as plugins to .zshrc
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#575756"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 ````
 
 Tip: If you are using iTerm2, modify colors so that autocomplete is visible.
