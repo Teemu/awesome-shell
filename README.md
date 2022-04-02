@@ -136,3 +136,10 @@ Configure `~/.gitconfig`
 [interactive]
     diffFilter = delta --color-only
 ````
+
+## Mac Apps
+
+- [Rectangle](https://rectangleapp.com/) - Snap windows left/right
+- [Monitor Control](https://github.com/MonitorControl/MonitorControl) - Controlling external display brightness
+- [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - Keep mac power on
+- [Alt Tab](https://alt-tab-macos.netlify.app/) - Better Alt-Tab
