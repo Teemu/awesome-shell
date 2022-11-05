@@ -131,8 +131,8 @@ brew install git-delta
 Configure `~/.gitconfig`
 
 ````
-[core]
-    pager = delta --keep-plus-minus-markers  --plus-color="#1b6e32" --theme='Monokai Extended'
+[core][core]
+    pager = delta --keep-plus-minus-markers --syntax-theme='Monokai Extended'
 [interactive]
     diffFilter = delta --color-only
 ````
